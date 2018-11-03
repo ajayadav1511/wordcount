@@ -1,0 +1,23 @@
+<h1>Word Counting</h1>
+
+
+
+<a href="http://127.0.0.1:8000/">back to honmepage</a><br>
+<a href="{% url 'home' %}">Go to home Page</a><br>
+<a href="{%url 'contact'%}">Go to contact page</a>
+  <br>
+{{ fulltext }}
+<br><br>
+<h2>Word count</h2>
+Total words={{ words }}<br>
+
+
+
+{% for word,value in word_dictionary %}
+
+{{word}}={{value}}<br>
+
+{% endfor %}
+<br>
+
+{{ word_dictionary }}
